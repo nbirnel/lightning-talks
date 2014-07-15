@@ -1,0 +1,44 @@
+why?
+repetitive tasks - adding new repos and forking
+avoiding switching window focus
+new possibilities
+
+how?
+the github api, with wget / curl 
+  - lots of learning and scripting
+  - just fine for one or two commands
+octogit
+  - ditto
+git hub
+  - fairly comprehensive
+  - rather large (3754 sloc sh, 98 sloc perl, 57 sloc ruby)
+  - already written for you!
+
+what do I use frequently?
+  - git hub repo-new <repo>
+  - git hub fork <owner>/<repo>
+  - git hub repo-edit <repo> description
+
+what looks silly?
+  - git hub clone <owner>/<repo>
+    (This could just be done with git clone, yes?)
+
+what could be interesting?
+  - git hub forks <owner>/<repo> | (get owners) |
+    git user <owners> and collate data.
+    Ie, what are stats about github usage in our class?
+
+what's the takeaway?
+  - Just because there's a web service
+    doesn't always mean the browser is the only or best UI for it.
+  - Tools you want are often out there (not just gems!)
+  - scriptable interfaces are extendable
+  - switching window focus can mean switching your focus
+  - 
+
+  
+
+
+
+
+
