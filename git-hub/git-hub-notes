@@ -1,7 +1,7 @@
 why?
-repetitive tasks - adding new repos and forking
-avoiding switching window focus
-new possibilities
+  - repetitive tasks - adding new repos and forking
+  - avoiding switching window focus
+  - new possibilities
 
 how?
 the github api, with wget / curl 
@@ -15,7 +15,9 @@ git hub
   - already written for you!
 
 git hub installation
-  git clone 
+  git clone git@github.com:ingydotnet/git-hub
+  sudo make install
+  git hub setup
 
 what do I use frequently?
   - git hub repo-new <repo>
@@ -48,10 +50,3 @@ what's the takeaway?
   - Tools you want are often out there (not just gems!)
   - scriptable interfaces are extendable
   - switching window focus can mean switching your focus
-
-  
-
-
-
-
-
