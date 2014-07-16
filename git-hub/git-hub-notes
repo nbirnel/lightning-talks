@@ -14,6 +14,9 @@ git hub
   - rather large (3754 sloc sh, 98 sloc perl, 57 sloc ruby)
   - already written for you!
 
+git hub installation
+  git clone 
+
 what do I use frequently?
   - git hub repo-new <repo>
   - git hub fork <owner>/<repo>
@@ -24,9 +27,20 @@ what looks silly?
     (This could just be done with git clone, yes?)
 
 what could be interesting?
-  - git hub forks <owner>/<repo> | (get owners) |
-    git user <owners> and collate data.
-    Ie, what are stats about github usage in our class?
+  forks = `git hub forks --forks UWE-Ruby/AdvancedSummer2014`.split("\n")
+  users = forks.map{|u| u.split("/").first}
+  n_repos = users.map{|u| `git hub user-get #{u} public_repos`.chomp.to_i}
+
+  def median(array)
+    sorted = array.sort
+    len = sorted.length
+    (sorted[(len - 1) / 2] + sorted[len / 2]) / 2.0
+  end
+
+  mean_repos = n_repos.reduce(:+) / users.size.to_f
+  median_repos = median n_repos
+
+  ie, what is the mean average of the number of github repos per student?
 
 what's the takeaway?
   - Just because there's a web service
@@ -34,7 +48,6 @@ what's the takeaway?
   - Tools you want are often out there (not just gems!)
   - scriptable interfaces are extendable
   - switching window focus can mean switching your focus
-  - 
 
   
 
