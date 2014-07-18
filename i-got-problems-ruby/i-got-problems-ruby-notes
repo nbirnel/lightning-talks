@@ -14,17 +14,19 @@ language:
 
 culture:
   - Those who do not study Unix will be condemned to repeat it!
-    insular mindset - ruby progs always going to be different - not make, apt-get, man
+    insular mindset - ruby infrastructure recreates *nix - not make, apt-get, man
+    users shouldn't need to care what language you write in 
     - rake v make
       "Only have to know ruby, not make" - rake a subset of ruby
       But I need make for other things - instead rake is a 2nd dsl to learn
-      often verbose, encourages functional / imperative rather than logic
+      can be verbose compared to make
+      encourages functional / imperative rather than logic
     - rvm / gem / bundle vs *nix package managers
       ignoring PMs generates conflicts (see non-system rubys and readline)
       seems oriented towards programmers (who wish to have many parallel installs)
         vs users (who would like to simply install a package)
     - man pages
-      gem has no way of installing "correctly" (since per-user)
+      standard gem pattern does install "correctly" (since per-user)
       most gems don't have them
       no infrastructure for them (md2man, etc?)
   - Rails is poisonous
@@ -32,8 +34,10 @@ culture:
     people think Rails == ruby
     focus on web-dev leads to... (PM / man page stuff discussed above)
   - Mac-centric
+    blogs seem to always say "brew install" and "System Preferences"
     (core team has done a fine job of keeping things portable)
     OS X a fine media and creative platform, but...
-    expensive per machine, and frequent hardware upgrades,
+    expensive per machine, and frequent hardware upgrades
+      (where "frequent" means "more often than every 10 years")
     so not feasible for developing world, or developed world lower class.
 
