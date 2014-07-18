@@ -29,7 +29,7 @@ what looks silly?
 
 what could be interesting?
   forks = `git hub forks --raw UWE-Ruby/AdvancedSummer2014`.split("\n")
-  users = forks.map{|u| u.split("/").first}
+  users = forks.map{|f| f.split("/").first}
   n_repos = users.map{|u| `git hub user-get #{u} public_repos`.chomp.to_i}
 
   def median(array)
@@ -62,3 +62,5 @@ what's the takeaway?
 END
 This document is available as part of:
 https://github.com/nbirnel/lightning-talks
+LICENSE:
+Share and enjoy.
