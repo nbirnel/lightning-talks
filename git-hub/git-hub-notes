@@ -1,7 +1,7 @@
 why?
-  - repetitive tasks - adding new repos and forking
+  - speed up repetitive tasks eg adding new repos and forking
   - avoiding switching window focus
-  - new possibilities
+  - new possibilities with a scripted interface
 
 how?
 the github api
@@ -28,7 +28,7 @@ what looks silly?
     (This could just be done with git clone, yes?)
 
 what could be interesting?
-  forks = `git hub forks --forks UWE-Ruby/AdvancedSummer2014`.split("\n")
+  forks = `git hub forks --raw UWE-Ruby/AdvancedSummer2014`.split("\n")
   users = forks.map{|u| u.split("/").first}
   n_repos = users.map{|u| `git hub user-get #{u} public_repos`.chomp.to_i}
 
@@ -41,11 +41,24 @@ what could be interesting?
   mean_repos = n_repos.reduce(:+) / users.size.to_f
   median_repos = median n_repos
 
-  ie, what is the mean average of the number of github repos per student?
+  ie, what are the mean and median averages
+  of the number of github repos per student?
+
+  Renée suggests that she could automate grading homework by pulling down 
+  everyone's work and running tests in one fell swoop.
 
 what's the takeaway?
   - Just because there's a web service
     doesn't always mean the browser is the only or best UI for it.
-  - switching window focus can mean switching your focus
+  - switching window focus can mean switching your mental focus
   - As a user: Tools you want are often out there (not just gems!)
   - As a dev: Please make your interfaces scriptable!
+      web: RESTful, published api
+      cli: no "fluff" in the output
+      gui: exposed & published api, or scripting engine - 
+        some way of getting at the command underneath the clicks
+      You don't know what your users might want to do. Let them find out.
+        
+END
+This document is available as part of:
+https://github.com/nbirnel/lightning-talks
