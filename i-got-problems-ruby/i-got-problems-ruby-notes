@@ -1,3 +1,8 @@
+why am I talking about this?
+  - we all know / are learning what is cool about ruby
+  - I arbitrarily propose that languages differ more by their cultural problems 
+    than by their cool points. (I won't try to prove this).
+
 language:
   - aliased methods (reduce / inject, etc)
     bloat the docs
@@ -8,7 +13,7 @@ language:
     maybe it's not a big deal, but it was a shocker
     is it a decision, or something to do with the architecture?
   - no increment / decrement operators
-    probably meant as a feature, what with ruby's array methods
+    probably a feature, what with ruby's array methods
   - no easy method to pass two anonymous blocks to a method.
     This is why lispers sneer at us
 
@@ -34,10 +39,11 @@ culture:
     people think Rails == ruby
     focus on web-dev leads to... (PM / man page stuff discussed above)
   - Mac-centric
-    blogs seem to always say "brew install" and "System Preferences"
     (core team has done a fine job of keeping things portable)
+    blogs seem to always say "brew install" and "System Preferences"
     OS X a fine media and creative platform, but...
     expensive per machine, and frequent hardware upgrades
       (where "frequent" means "more often than every 10 years")
     so not feasible for developing world, or developed world lower class.
 
+13 minutes 2014-07-18 10:01 AM
