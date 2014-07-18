@@ -4,13 +4,12 @@ why?
   - new possibilities
 
 how?
-the github api, with wget / curl 
+the github api
+   https://developer.github.com/libraries/
   - lots of learning and scripting
   - just fine for one or two commands
-octogit
-  - ditto
 git hub
-  - fairly comprehensive
+  - comprehensive enough for me, for now
   - rather large (3754 sloc sh, 98 sloc perl, 57 sloc ruby)
   - already written for you!
 
@@ -19,7 +18,7 @@ git hub installation
   sudo make install
   git hub setup
 
-what do I use frequently?
+what am I using?
   - git hub repo-new <repo>
   - git hub fork <owner>/<repo>
   - git hub repo-edit <repo> description
@@ -47,6 +46,6 @@ what could be interesting?
 what's the takeaway?
   - Just because there's a web service
     doesn't always mean the browser is the only or best UI for it.
-  - Tools you want are often out there (not just gems!)
-  - scriptable interfaces are extendable
   - switching window focus can mean switching your focus
+  - As a user: Tools you want are often out there (not just gems!)
+  - As a dev: Please make your interfaces scriptable!
