@@ -5,30 +5,35 @@ language:
   - too many methods!
     (but sometimes I want them)
   - no real constants
-    maybe it's not a big deal, but it scares me
+    maybe it's not a big deal, but it was a shocker
     is it a decision, or something to do with the architecture?
   - no increment / decrement operators
     probably meant as a feature, what with ruby's array methods
+  - no easy method to pass two anonymous blocks to a method.
+    This is why lispers sneer at us
 
 culture:
-  - Those who do not study Unix will be codemned to repeat it!
-    insular mindset - ruby progs alwasy going to be different - not make, apt-get, man
+  - Those who do not study Unix will be condemned to repeat it!
+    insular mindset - ruby progs always going to be different - not make, apt-get, man
     - rake v make
       "Only have to know ruby, not make" - rake a subset of ruby
-      But I need make for other things - instead rake is a 2nd dsl
+      But I need make for other things - instead rake is a 2nd dsl to learn
       often verbose, encourages functional / imperative rather than logic
-    - gem / bundle vs *nix package managers
+    - rvm / gem / bundle vs *nix package managers
       ignoring PMs generates conflicts (see non-system rubys and readline)
-      seems oriented towards programmers (who may wish to have many installs)
+      seems oriented towards programmers (who wish to have many parallel installs)
         vs users (who would like to simply install a package)
     - man pages
       gem has no way of installing "correctly" (since per-user)
       most gems don't have them
       no infrastructure for them (md2man, etc?)
   - Rails is poisonous
-    "magic" is not a complement
+    "magic" should not be taken as a complement
     people think Rails == ruby
+    focus on web-dev leads to... (PM / man page stuff discussed above)
   - Mac-centric
-    OS X a fine media platform 
-    pricewise is extremely elitist - per machine, and frequent hardware upgrades
+    (core team has done a fine job of keeping things portable)
+    OS X a fine media and creative platform, but...
+    expensive per machine, and frequent hardware upgrades,
+    so not feasible for developing world, or developed world lower class.
 
