@@ -1,0 +1,12 @@
+http://learnvimscriptthehardway.stevelosh.com/
+https://github.com/tpope/vim-rails
+
+installation:
+use pathogen!
+https://github.com/tpope/vim-pathogen
+then...
+cd ~/.vim/bundle
+git clone git://github.com/tpope/vim-rails.git
+git clone git://github.com/tpope/vim-bundler.git
+
+../git-hub/git-hub-notes
