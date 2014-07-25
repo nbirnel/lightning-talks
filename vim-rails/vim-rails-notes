@@ -1,45 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 vim-rails - a plugin for the text editor Vim
 
 Should you care if you are not a Vim user?
@@ -111,7 +69,12 @@ Check out other editors
 Steal!
 
 Jason Swat points out NERDTree:
+(browse dir structure in a tree style inside vim)
 http://www.vim.org/scripts/script.php?script_id=1658
+
+Renée points out:
+(acme-like console / editor where all text is executable)
+http://xiki.org/
 
 END
 This document is available as part of:
