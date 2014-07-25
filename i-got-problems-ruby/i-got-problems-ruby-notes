@@ -10,10 +10,9 @@ language:
   - too many methods!
     (but sometimes I want them)
   - no real constants
-    maybe it's not a big deal, but it was a shocker
     is it a decision, or something to do with the architecture?
   - no increment / decrement operators
-    probably a feature, what with ruby's array methods
+    probably a feature
   - no easy method to pass two anonymous blocks to a method.
     This is why lispers sneer at us
 
@@ -38,6 +37,7 @@ culture:
     "magic" should not be taken as a complement
     people think Rails == ruby
     focus on web-dev leads to... (PM / man page stuff discussed above)
+    so many files, the only practical VC is "git add ."
   - Mac-centric
     (core team has done a fine job of keeping things portable)
     blogs seem to always say "brew install" and "System Preferences"
