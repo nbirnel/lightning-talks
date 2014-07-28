@@ -33,6 +33,9 @@ culture:
       standard gem pattern does install "correctly" (since per-user)
       most gems don't have them
       no infrastructure for them (md2man, etc?)
+    - hot comments
+      http://c2.com/cgi/wiki?HotComments  
+      ruby *has* rd - why are we using comments for documentation?
   - Rails is poisonous
     "magic" should not be taken as a complement
     people think Rails == ruby
