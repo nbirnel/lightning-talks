@@ -48,11 +48,12 @@ why am I complaining about ruby?
 language:
   - aliased methods (reduce/inject, map/collect, next/succ)
   - too many methods!
+    115 string methods
   - no real constants
   - no increment / decrement operators
     probably a feature
-  - no easy method to pass two anonymous blocks to a method.
-    This is why lispers sneer at us
+  - need to use Proc to pass two blocks to a method.
+    (This is why lispers sneer at us)
 
 culture:
   - Those who do not study Unix will be condemned to repeat it!
@@ -76,8 +77,8 @@ culture:
       ruby *has* rd - why are we using comments for documentation?
   - DSL frenzy 
   - Rails is poisonous
-    "magic" should not be taken as a complement
-    people think Rails == ruby
+    "magic".is_a? Complement
+    Rails == ruby
     focus on web-dev leads to... (PM / man page stuff discussed above)
     so many files, the only practical VC is "git add ."
   - Mac-centric
@@ -88,4 +89,12 @@ culture:
       (where "frequent" means "more often than every 10 years")
     so not feasible for developing world, or developed world lower class.
 
-13 minutes 2014-07-18 10:01 AM
+
+count_ruby_methods() {
+    # call this function with "String" or "Array", eg
+    lynx -dump http://www.ruby-doc.org/core-2.1.2/"$1".html |\
+    sed '1,/^Methods/d' |\
+    sed '/^Included Modules/,$d' |\
+    sed '/^$/d' |\
+    wc
+}
