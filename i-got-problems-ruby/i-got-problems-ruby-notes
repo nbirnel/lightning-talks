@@ -42,6 +42,7 @@
 
 why am I complaining about ruby?
   - we all know / are learning what is cool about ruby
+  - I want to figure out what I am missing vs what is actually a problem 
   - I arbitrarily propose that languages differ more by their cultural problems 
     than by their cool points. (I won't try to prove this).
 
@@ -74,6 +75,7 @@ culture:
       no infrastructure for them (md2man, etc?)
     - hot comments
       http://c2.com/cgi/wiki?HotComments  
+      https://en.wikipedia.org/wiki/Ruby_Document_format
       ruby *has* rd - why are we using comments for documentation?
   - DSL frenzy 
   - Rails is poisonous
@@ -98,3 +100,10 @@ count_ruby_methods() {
     sed '/^$/d' |\
     wc
 }
+
+END
+This document is available as part of:
+https://github.com/nbirnel/lightning-talks
+LICENSE:
+Share and enjoy.
+
