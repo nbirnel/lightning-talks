@@ -1,16 +1,54 @@
-why am I talking about this?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+why am I complaining about ruby?
   - we all know / are learning what is cool about ruby
   - I arbitrarily propose that languages differ more by their cultural problems 
     than by their cool points. (I won't try to prove this).
 
 language:
-  - aliased methods (reduce / inject, etc)
-    bloat the docs
-    confuse the code
+  - aliased methods (reduce/inject, map/collect, next/succ)
   - too many methods!
-    (but sometimes I want them)
   - no real constants
-    is it a decision, or something to do with the architecture?
   - no increment / decrement operators
     probably a feature
   - no easy method to pass two anonymous blocks to a method.
@@ -36,6 +74,7 @@ culture:
     - hot comments
       http://c2.com/cgi/wiki?HotComments  
       ruby *has* rd - why are we using comments for documentation?
+  - DSL frenzy 
   - Rails is poisonous
     "magic" should not be taken as a complement
     people think Rails == ruby
