@@ -1,2 +1,5 @@
 
-a working filesystem?!?!
+salt \* sys.doc 
+salt-run
+salt-call
+salt-key

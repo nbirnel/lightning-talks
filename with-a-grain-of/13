@@ -1,4 +1,4 @@
 
-man salt
-SEE ALSO
-       salt(7) salt-master(1) salt-minion(1)
+salt-run jobs.active
+salt \* saltutil.find_job <jobid>
+salt \* saltutil.find_cached_job <jobid>
