@@ -41,11 +41,12 @@ chmod 755 test/no_dead_puppies
 git bisect start
 git bisect bad
 git bisect good 1.0
+git bisect reset
 
 git bisect start HEAD 1.0
 git bisect run test/no_dead_puppies
 
-git diff HEAD^
+git diff <bad-commit>^ <bad-commit>
 
 git bisect reset
 vim puppy

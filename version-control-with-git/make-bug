@@ -1,7 +1,10 @@
 #!/bin/bash
 
 commit_lots() {
-    n=$(expr $RANDOM % 1000)
+    n=0
+    while [ $n -lt 200 ]; do
+        n=$(expr $RANDOM % 2000)
+    done
     for i in `seq $n`; do
         echo "echo $RANDOM puppies" >>puppy
         git add puppy
