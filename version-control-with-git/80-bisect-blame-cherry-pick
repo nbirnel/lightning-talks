@@ -1,0 +1,60 @@
+mkdir puppy
+cd puppy
+git init
+
+mkdir test
+echo '#!/bin/sh
+
+./puppy | grep -e puppy -e puppies' >test/has_puppy
+
+./test/has_puppy && echo 'good'
+
+git add test/has_puppy
+git commit -m 'add test for puppy'
+
+echo '#!/bin/sh
+
+echo puppy' >puppy
+chmod 755 puppy
+
+./test/has_puppy && echo 'good'
+
+git add puppy
+git commit -m'initial commit'
+
+git tag 1.0
+
+commit_lots() {
+    for i in `seq $1`; do
+        echo "echo $RANDOM puppies" >>puppy
+        git add puppy
+        git commit -m'add more puppies'
+    done
+}
+
+commit_lots 50
+echo 'echo one dead puppy' >>puppy
+git add puppy
+git commit -m'add more puppies'
+commit_lots 400
+
+echo '#!/bin/sh
+
+./puppies | grep "dead pupp"
+if [ $? -eq 0 ]; then
+    false
+else
+    true
+fi' >test/no_dead_puppies
+chmod 755 test/no_dead_puppies
+./test/no_dead_puppies && echo 'good'
+
+git bisect start HEAD 1.0
+git bisect run test/no_dead_puppy
+
+git diff <bad-commit>^ <bad-commit>
+
+git bisect reset
+vim puppy
+git add puppy
+git commit -m'fix dead puppy'
