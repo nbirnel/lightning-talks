@@ -9,12 +9,21 @@ A bit more:
 log
 branch, checkout, diff, merge
 mv, rm
-tag, describe
+tag
+
+minimal mastery:
+================
+mergetool
+stash
+reset
+.gitignore
+config
+aliases
+.git
 
 minimal mastery:
 ================
 bisect, blame, cherry-pick
-stash, reset
 grep 
 clean
 revert

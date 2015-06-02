@@ -20,11 +20,15 @@ git branch
 git branch add better_readme
 git checkout better_readme
 vim README.md
-git add .      #Naughty
-git commit -a
-git rm notes
+git diff
+git add .           #Naughty
+git commit -a       #Naughty
+git rm notes        #and see git mv
 git commit -a
 git checkout master
 git merge better_readme
 git tag 'vcwg-first'
 git push origin master
+git log
+git log --decorate --graph
+
