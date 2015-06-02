@@ -1,0 +1,22 @@
+Getting started:
+================
+clone / init
+add, status, commit
+remote, pull, push, 
+
+A bit more:
+===========
+log
+branch, checkout, diff, merge
+mv, rm
+tag, describe
+
+minimal mastery:
+================
+bisect, blame, cherry-pick
+stash, reset
+grep 
+clean
+revert
+submodule
+reset: Don't.
