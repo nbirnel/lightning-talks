@@ -28,6 +28,3 @@ git checkout master
 git merge better_readme
 git tag 'vcwg-first'
 git push origin master
-
-
-

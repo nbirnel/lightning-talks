@@ -6,6 +6,7 @@ mkdir test
 echo '#!/bin/sh
 
 ./puppy | grep -e puppy -e puppies' >test/has_puppy
+chmod 755 test/has_puppy
 
 ./test/has_puppy && echo 'good'
 
@@ -35,12 +36,12 @@ commit_lots() {
 commit_lots 50
 echo 'echo one dead puppy' >>puppy
 git add puppy
-git commit -m'add more puppies'
+git commit --author 'Bad Programmer <bprogrammer@coalfire.com>' -m'add more puppies'
 commit_lots 400
 
 echo '#!/bin/sh
 
-./puppies | grep "dead pupp"
+./puppy | grep "dead pupp"
 if [ $? -eq 0 ]; then
     false
 else
@@ -50,11 +51,12 @@ chmod 755 test/no_dead_puppies
 ./test/no_dead_puppies && echo 'good'
 
 git bisect start HEAD 1.0
-git bisect run test/no_dead_puppy
+git bisect run test/no_dead_puppies
 
 git diff <bad-commit>^ <bad-commit>
 
 git bisect reset
 vim puppy
 git add puppy
+git add test/no_dead_puppies
 git commit -m'fix dead puppy'
