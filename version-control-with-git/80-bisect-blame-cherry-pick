@@ -25,19 +25,7 @@ git commit -m'initial commit'
 
 git tag 1.0
 
-commit_lots() {
-    for i in `seq $1`; do
-        echo "echo $RANDOM puppies" >>puppy
-        git add puppy
-        git commit -m'add more puppies'
-    done
-}
-
-commit_lots 50
-echo 'echo one dead puppy' >>puppy
-git add puppy
-git commit --author 'Bad Programmer <bprogrammer@coalfire.com>' -m'add more puppies'
-commit_lots 400
+../make-bug
 
 echo '#!/bin/sh
 
@@ -50,10 +38,14 @@ fi' >test/no_dead_puppies
 chmod 755 test/no_dead_puppies
 ./test/no_dead_puppies && echo 'good'
 
+git bisect start
+git bisect bad
+git bisect good 1.0
+
 git bisect start HEAD 1.0
 git bisect run test/no_dead_puppies
 
-git diff <bad-commit>^ <bad-commit>
+git diff HEAD^
 
 git bisect reset
 vim puppy

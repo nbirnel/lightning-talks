@@ -1,0 +1,19 @@
+#!/bin/bash
+
+commit_lots() {
+    n=$(expr $RANDOM % 1000)
+    for i in `seq $n`; do
+        echo "echo $RANDOM puppies" >>puppy
+        git add puppy
+        git commit -m'add more puppies'
+    done
+}
+
+commit_lots
+
+echo 'echo one dead puppy' >>puppy
+git add puppy
+git commit --author 'Bad Programmer <bprogrammer@coalfire.com>' -m'add more puppies'
+
+
+commit_lots
