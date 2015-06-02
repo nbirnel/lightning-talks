@@ -1,0 +1,15 @@
+#Navigate to lightning-talks
+git clone https://github.com/nbirnel/lightning-talks 
+cd lightning-talks
+vim README.md
+Some short talks I have given
+=============================
+:wq
+git status
+vim notes
+git status
+git add README.md
+git status
+git commit 
+git push
+
