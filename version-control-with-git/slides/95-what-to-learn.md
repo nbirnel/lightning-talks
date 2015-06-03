@@ -33,6 +33,7 @@ aliases
 Some nice stuff:
 ----------------
 bisect, blame, cherry-pick
+hooks
 grep 
 clean
 revert
