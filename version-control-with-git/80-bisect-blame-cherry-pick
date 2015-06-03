@@ -38,6 +38,7 @@ fi' >test/no_dead_puppies
 chmod 755 test/no_dead_puppies
 ./test/no_dead_puppies && echo 'good'
 
+# skip this stanza if pressed for time
 git bisect start
 git bisect bad
 git bisect good 1.0
