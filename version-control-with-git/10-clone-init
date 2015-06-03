@@ -1,5 +1,5 @@
 #Navigate to lightning-talks
-git clone https://github.com/nbirnel/lightning-talks 
+git clone http://github.com/nbirnel/lightning-talks 
 cd lightning-talks
 vim README.md
 #Some short talks I have given

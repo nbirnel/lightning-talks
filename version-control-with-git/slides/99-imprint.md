@@ -3,7 +3,10 @@
 
 
 
-    git clone https://github.com/nbirnel/lightning-talks
+    http://github.com/nbirnel/lightning-talks
+
+
+    git clone http://github.com/nbirnel/lightning-talks
 
 
 
