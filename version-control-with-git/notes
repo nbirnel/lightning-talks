@@ -21,7 +21,7 @@ config
 aliases
 .git
 
-minimal mastery:
+Some nice stuff:
 ================
 bisect, blame, cherry-pick
 grep 

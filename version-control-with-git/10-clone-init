@@ -30,5 +30,5 @@ git merge better_readme
 git tag 'vcwg-first'
 git push origin master
 git log
-git log --decorate --graph
+git log --decorate --graph --color
 
