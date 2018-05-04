@@ -1,4 +1,4 @@
 Some short talks I have given
 =============================
 
-Don't expect very good slides
+This repo merged into https://github.com/nbirnel/talks.git
